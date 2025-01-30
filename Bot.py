@@ -93,7 +93,7 @@ async def check_mail():
         mail.select('inbox')
 
     
-        senders = ["wordpress@krainamriy.fun", "no-reply@uployal.io", "gorodok048@gmail.com"]
+        senders = ["wordpress@krainamriy.fun", "no-reply@uployal.io"]
         mail_ids = []
 
         for sender in senders:
