@@ -93,7 +93,7 @@ async def check_mail():
         mail.select('inbox')
 
     
-        senders = ["wordpress@krainamriy.fun", "no-reply@uployal.io"]
+        senders = ["wordpress@krainamriy.fun", "no-reply@uployal.io", "email@krainamriy.fun"]
         mail_ids = []
 
         for sender in senders:
@@ -143,7 +143,7 @@ async def main():
             await check_mail() 
         except Exception as e:
             logging.error(f"Загальна помилка: {str(e)}")
-        await asyncio.sleep(30)  
+        await asyncio.sleep(300)  
 
 
 if __name__ == '__main__':
